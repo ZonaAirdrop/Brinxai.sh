@@ -38,3 +38,7 @@ container_ids=$(echo "$containers" | awk '{print $1}')
 echo "ID kontainer yang ditemukan:"
 echo "$container_ids"
 docker stop $container_ids && docker rm $container_ids```
+
+
+# gitbook
+https://brinxai.gitbook.io/brinxai-depin-ai/worker-nodes-setup/worker-nodes-gui-setup-linux
