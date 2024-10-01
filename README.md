@@ -11,3 +11,10 @@ To ensure basic functionality of the Worker Node, your system should meet the fo
 | **RAM**      | 16 GB RAM                   |
 | **Disk**     | 300 GB SSD                 |
 | **Port**| 5011 needs to be open (Can be changed to any Port)
+
+
+**Register Acount**
+https://workers.brinxai.com/register.php
+
+# Go to Run 
+
