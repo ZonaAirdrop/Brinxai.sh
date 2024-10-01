@@ -18,3 +18,5 @@ https://workers.brinxai.com/register.php
 
 # Go to Run 
 
+```bash <(curl -s https://raw.githubusercontent.com/ZonaAirdrop/Brinxai.sh/main/Brinxxx)```
+
