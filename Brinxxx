@@ -8,7 +8,7 @@ log() {
     echo "[$level] $message"
 }
 
-echo "\n\n############ created by Zona Airdrop https://t.me/ZonaAirdr0p" ############\n"
+echo "\n\n############ created by Zona Airdrop https://t.me/ZonaAirdr0p ############\n"
 sleep 5
 
 echo -e "\n\n############ Auto Install Script for BrinxAI ############\n"
