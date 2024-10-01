@@ -25,7 +25,7 @@ https://workers.brinxai.com/register.php
 
 **Delete and stop**
 
-pattern="admier/brinxai_nodes"
+```pattern="admier/brinxai_nodes"
 echo "Mencari kontainer dengan pola: ${pattern}"
 containers=$(docker ps --format "{{.ID}} {{.Image}} {{.Names}}" | grep "${pattern}")
 if [ -z "$containers" ]; then
@@ -37,4 +37,4 @@ echo "$containers"
 container_ids=$(echo "$containers" | awk '{print $1}')
 echo "ID kontainer yang ditemukan:"
 echo "$container_ids"
-docker stop $container_ids && docker rm $container_ids
+docker stop $container_ids && docker rm $container_ids```
