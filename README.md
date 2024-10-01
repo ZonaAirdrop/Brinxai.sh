@@ -20,3 +20,21 @@ https://workers.brinxai.com/register.php
 
 ```bash <(curl -s https://raw.githubusercontent.com/ZonaAirdrop/Brinxai.sh/main/Brinxxx)```
 
+**Enter your IP and Port**
+https://workers.brinxai.com/register.php
+
+**Delete and stop**
+
+pattern="admier/brinxai_nodes"
+echo "Mencari kontainer dengan pola: ${pattern}"
+containers=$(docker ps --format "{{.ID}} {{.Image}} {{.Names}}" | grep "${pattern}")
+if [ -z "$containers" ]; then
+    echo "Tidak ada kontainer yang sesuai ditemukan."
+    exit 0
+fi
+echo "Kontainer yang ditemukan:"
+echo "$containers"
+container_ids=$(echo "$containers" | awk '{print $1}')
+echo "ID kontainer yang ditemukan:"
+echo "$container_ids"
+docker stop $container_ids && docker rm $container_ids
